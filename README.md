@@ -1,6 +1,6 @@
 # vrest-runner
 
-1. Executes test cases on command line, which are stored by [vREST Desktop](https://desktop.vrest.io). For more information, please read this [guide link](https://desktop.vrest.io/docs/guide/misc/command-line.html).
+1. Executes test cases on command line, which are stored by [vREST Desktop](https://desktop.vrest.io).
 2. vrest-runner command can be used in any third party schedular like cron to schedule test cases.
 3. vrest-runner command can be used in any continuous integration server like Jenkins, TeamCity, Azure Devops, CircleCI, TravisCI etc. 
 
