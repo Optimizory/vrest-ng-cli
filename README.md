@@ -8,7 +8,6 @@
 | Version       | Linux        | Mac OS       | Windows      |
 | ------------- |:------------ | :------------| :----------- |
 | 0.0.116       | [Download](https://github.com/Optimizory/vrest-runner/releases/download/v0.0.116/vrest_runner_linux_0_0_116) | [Download](https://github.com/Optimizory/vrest-runner/releases/download/v0.0.116/vrest_runner_mac_0_0_116) | [Download](https://github.com/Optimizory/vrest-runner/releases/download/v0.0.116/vrest_runner_win_0_0_116.exe) |
-| ------------- |:------------ | :------------| :----------- |
 | 0.0.115       | [Download](https://github.com/Optimizory/vrest-runner/releases/download/v0.0.115/vrest_runner_linux_0_0_115) | [Download](https://github.com/Optimizory/vrest-runner/releases/download/v0.0.115/vrest_runner_mac_0_0_115) | [Download](https://github.com/Optimizory/vrest-runner/releases/download/v0.0.115/vrest_runner_win_0_0_115.exe) |
 
 ### Setup / Installation:
