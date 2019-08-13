@@ -27,13 +27,13 @@
     a. First, move the downloaded binary file to the directory of your choice
     
     b. Rename the binary file to just vrunner with the following command:
-    ```bash    
-    $ mv vrest_runner_linux_x_y_z vrest-runner
-    ```
+    
+        $ mv vrest_runner_linux_x_y_z vrest-runner
+    
     c. Make it executable by executing the following command:
-    ```bash
-    $ chmod +x vrest-runner
-    ``` 
+    
+        $ chmod +x vrest-runner
+    
     d. Now add this binary file in your execution path.
 
 
