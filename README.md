@@ -1,8 +1,8 @@
-# vrest-runner
+# vrest-ng-cli
 
 1. Executes test cases on command line, which are stored by [vREST Desktop](https://desktop.vrest.io).
-2. vrest-runner command can be used in any third party schedular like cron to schedule test cases.
-3. vrest-runner command can be used in any continuous integration server like Jenkins, TeamCity, Azure Devops, CircleCI, TravisCI etc. 
+2. vrest-ng-cli command can be used in any third party schedular like cron to schedule test cases.
+3. vrest-ng-cli command can be used in any continuous integration server like Jenkins, TeamCity, Azure Devops, CircleCI, TravisCI etc. 
 
 ### Download:
 | Version       | Linux        | Mac OS       | Windows      |
@@ -18,9 +18,9 @@
 
     b. First, move the downloaded binary file to the directory of your choice
     
-    c. Rename the binary file to just vrest-runner with the following command:
+    c. Rename the binary file to just vrest-ng-cli with the following command:
 
-        C:\dir\path> move vrest_runner_win_x_y_z.exe vrest-runner.exe
+        C:\dir\path> move vrest_runner_win_x_y_z.exe vrest-ng-cli.exe
 
     d. `Optional` Now add this binary file in your execution path by setting the environment variable PATH.
 
@@ -30,22 +30,69 @@
     
     b. Rename the binary file to just vrunner with the following command:
     
-        $ mv vrest_runner_linux_x_y_z vrest-runner
+        $ mv vrest_runner_linux_x_y_z vrest-ng-cli
     
     c. Make it executable by executing the following command:
     
-        $ chmod +x vrest-runner
+        $ chmod +x vrest-ng-cli
     
     d. Now add this binary file in your execution path.
 
+## Import Command
 
-### Usage:
+This is the command used to import test cases into vREST Desktop.
+
+### Usage Instructions
 ```bash
-vrest-runner  --projectdir="<path_to_tc_directory>" 
+vrest-ng-cli import --projectdir="<path_to_tc_directory>" 
+            --source="<import_source>"
+            --sourcefile="<source_file_path>"
+            --defaulttestsuite="<test_suite_name>"
+            [--updateonly="<true_or_false>"]
+```
+
+### Example
+```bash
+vrest-ng-cli import --source="vrest-cloud"
+            --sourcefile=/path/to/your/source/file 
+            --projectdir=/path/to/your/project/directory 
+            --defaulttestsuite=Sample\ Test\ Suite
+            --updateonly="true"
+```
+
+### Options
+```bash
+    --help              Show help                     
+    --source            Import Source [required]
+                        [choices: "vrest-cloud", "swagger", "postman"]
+    --sourcefile        Provide the source file path which you want to import.
+    --projectdir        Provide the path of the project directory in you want to
+                        import/re-import the data. [required]    
+    --defaulttestsuite  Provide the default test suite name. [required]    
+    --updateonly        Set this option if you want to update the test data
+                        instead of creating again. This option is applicable only
+                        for swagger source as of now. [default: false]
+```
+
+## Run Command
+
+This is the command used for running the test cases that you stored in the project directory.
+
+### Usage Instructions
+```bash
+vrest-ng-cli run --projectdir="<path_to_tc_directory>" 
             [--testsuitename="<test_suite_name>"]
-            [--env=<environment_name>] [--nosslcheck=<boolean_value>]
-            [--logger=<one_of_available_loggers>] 
-            [--logfilepath="<path_of_log_file_for_logger_other_than_console>"]
+           [--env=<environment_name>] [--nosslcheck=<boolean_value>]
+           [--logger=<one_of_available_loggers>] 
+           [--logfilepath="<path_of_log_file_for_logger_other_than_console>"]
+```
+
+### Example
+```bash
+vrest-ng-cli run --projectdir=/path/to/your/project/directory 
+            --testsuitename=Sample\ Test\ Suite 
+            --logger=xunit 
+            --logfilepath=/path/to/directory/for/vrest-logs/logs.xml
 ```
 
 ### Options:
