@@ -15,14 +15,10 @@ vrest-ng-cli is a command line utility aim to perform various tasks through comm
 ### Download:
 
 | Version | Linux | Mac OS | Windows |
-
-| ------------- |:------------ | :------------| :----------- |
-| 0.8.1 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.8.1/vrest_runner_linux_0_8_1) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.8.1/vrest_runner_mac_0_8_1) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.8.1/vrest_runner_win_0_8_1.exe) |
-
+| ------------- | ------------ | ------------| ----------- |
+| 0.8.1 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.8.1/vrest_ng_cli_linux_0_8_1) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.8.1/vrest_ng_cli_mac_0_8_1) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.8.1/vrest_ng_cli_win_0_8_1.exe) |
 | 0.5.3 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.5.3/vrest_runner_linux_0_5_3) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.5.3/vrest_runner_mac_0_5_3) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.5.3/vrest_runner_win_0_5_3.exe) |
-
 | 0.0.116 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.0.116/vrest_runner_linux_0_0_116) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.0.116/vrest_runner_mac_0_0_116) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.0.116/vrest_runner_win_0_0_116.exe) |
-
 | 0.0.115 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.0.115/vrest_runner_linux_0_0_115) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.0.115/vrest_runner_mac_0_0_115) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.0.115/vrest_runner_win_0_0_115.exe) |
 
 ### Setup / Installation:
