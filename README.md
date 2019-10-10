@@ -36,11 +36,11 @@ vrest-ng-cli is a command line utility aim to perform various tasks through comm
 	1. First, move the downloaded binary file to the directory of your choice
 	2. Rename the binary file to just vrunner with the following command:
 
-	`$ mv vrest_ng_cli_linux_x_y_z vrest-ng-cli`
+    `$ mv vrest_ng_cli_linux_x_y_z vrest-ng-cli`
 
 	3. Make it executable by executing the following command:
 
-	`$ chmod +x vrest-ng-cli`
+    `$ chmod +x vrest-ng-cli`
 
 	4. Now add this binary file in your execution path.
 
