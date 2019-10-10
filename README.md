@@ -27,14 +27,17 @@ vrest-ng-cli is a command line utility aim to perform various tasks through comm
 	1. This exe file can be executed on command prompt. So, double mouse click on the downloaded file will not help in executing the test cases.  
 	2. First, move the downloaded binary file to the directory of your choice
 	3. Rename the binary file to just vrest-ng-cli with the following command:
-`C:\dir\path> move vrest_ng_cli_win_x_y_z.exe vrest-ng-cli.exe`
+
+    `C:\dir\path> move vrest_ng_cli_win_x_y_z.exe vrest-ng-cli.exe`
 	4. `Optional` Now add this binary file in your execution path by setting the environment variable PATH.
 
 2.  **For Linux / Mac Machine**
 	1. First, move the downloaded binary file to the directory of your choice
 	2. Rename the binary file to just vrunner with the following command:
+
 	`$ mv vrest_ng_cli_linux_x_y_z vrest-ng-cli`
 	3. Make it executable by executing the following command:
+
 	`$ chmod +x vrest-ng-cli`
 	4. Now add this binary file in your execution path.
 
@@ -61,16 +64,16 @@ vrest-ng-cli import --source="swagger"
 
 ### Options
 ```bash
---help 				:Show help
---source 			:Import Source [required]
-							[choices: "vrest-cloud", "swagger", "postman"]
---sourcefile 		:Provide the source file path which you want to import.
---projectdir 		:Provide the path of the project directory in you want to
-							import/re-import the data. [required]
---defaulttestsuite 	:Provide the default test suite name.
---updateonly 		:Set this option if you want to update the test data instead of 
-							creating again. This option is applicable only for swagger source 
-							as of now. [default: false]
+--help              : Show help
+--source            : Import Source [required]
+                        [choices: "vrest-cloud", "swagger", "postman"]
+--sourcefile        : Provide the source file path which you want to import.
+--projectdir        : Provide the path of the project directory in you want to
+                      import/re-import the data. [required]
+--defaulttestsuite  : Provide the default test suite name.
+--updateonly        : Set this option if you want to update the test data instead of 
+                      creating again. This option is applicable only for swagger source 
+                      as of now. [default: false]
 ```
 
 ## Run Command
@@ -96,31 +99,31 @@ vrest-ng-cli run --projectdir="/path/to/your/project/directory"
 
 ### Options:
 ```bash
---projectdir			: Provide the path of the project directory which contains the 
-								testsuites.json file.
-								If you dont provide the testsuitename option, then it will 
-								execute all the test suites available in the project.
---testsuitename  :Optional: Provide the specific test suite name which you want 
-								to execute in double quotes.
--T, --timeout    	: How much to wait for response after execution of test case.
-								It should be provided in unit of seconds.
-								e.g. -T=3 will wait for 3 seconds for response
--N, --env				: Provide the environment name to initialize the global 
-								variables. By default environment `Default` is used.
--S, --nosslcheck 	: If this argument is `true`, vRUNNER will process all 
-								requests, without Secure Certificate Check. By default 
-								Secure Certificate Check is enabled. This option is useful 
-								in self-signed certificate issues.
--L, --logger			: Your desired logging of the vRUNNER execution process 
-								and result. This can be either `console` or `json` or `csv` 
-								or `xunit`. By default `console` logger is used.
--F, --logfilepath   	: Valid if other than `console` logger is selected.
-								Absolute path of the log file, into which execution process 
-								and result logs will be dumped.
-								If path/file is not present, tool will try to setup that path, 
-								and create file automatically.
-								Please note that if file already exists, that will be overwritten.
-								By default it will be the `vrest/logs.[json|xml|csv]` in 
-								current directory.
--H, --help				: To see this help.
+--projectdir      : Provide the path of the project directory which contains the 
+                    testsuites.json file.
+                    If you dont provide the testsuitename option, then it will 
+                    execute all the test suites available in the project.
+--testsuitename   : Optional: Provide the specific test suite name which you want 
+                    to execute in double quotes.
+-T, --timeout     : How much to wait for response after execution of test case.
+                    It should be provided in unit of seconds.
+                    e.g. -T=3 will wait for 3 seconds for response
+-N, --env         : Provide the environment name to initialize the global 
+                    variables. By default environment `Default` is used.
+-S, --nosslcheck  : If this argument is `true`, vRUNNER will process all 
+                    requests, without Secure Certificate Check. By default 
+                    Secure Certificate Check is enabled. This option is useful 
+                    in self-signed certificate issues.
+-L, --logger      : Your desired logging of the vRUNNER execution process 
+                    and result. This can be either `console` or `json` or `csv` 
+                    or `xunit`. By default `console` logger is used.
+-F, --logfilepath : Valid if other than `console` logger is selected.
+                    Absolute path of the log file, into which execution process 
+                    and result logs will be dumped.
+                    If path/file is not present, tool will try to setup that path, 
+                    and create file automatically.
+                    Please note that if file already exists, that will be overwritten.
+                    By default it will be the `vrest/logs.[json|xml|csv]` in 
+                    current directory.
+-H, --help         : To see this help.
 ```
