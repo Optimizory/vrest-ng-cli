@@ -29,6 +29,7 @@ vrest-ng-cli is a command line utility aim to perform various tasks through comm
 	3. Rename the binary file to just vrest-ng-cli with the following command:
 
     `C:\dir\path> move vrest_ng_cli_win_x_y_z.exe vrest-ng-cli.exe`
+
 	4. `Optional` Now add this binary file in your execution path by setting the environment variable PATH.
 
 2.  **For Linux / Mac Machine**
@@ -36,9 +37,11 @@ vrest-ng-cli is a command line utility aim to perform various tasks through comm
 	2. Rename the binary file to just vrunner with the following command:
 
 	`$ mv vrest_ng_cli_linux_x_y_z vrest-ng-cli`
+
 	3. Make it executable by executing the following command:
 
 	`$ chmod +x vrest-ng-cli`
+
 	4. Now add this binary file in your execution path.
 
 ## Import Command
@@ -125,5 +128,5 @@ vrest-ng-cli run --projectdir="/path/to/your/project/directory"
                     Please note that if file already exists, that will be overwritten.
                     By default it will be the `vrest/logs.[json|xml|csv]` in 
                     current directory.
--H, --help         : To see this help.
+-H, --help        : To see this help.
 ```
