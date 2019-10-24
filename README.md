@@ -86,7 +86,8 @@ This is the command used for running the test cases that you stored in the proje
 ### Usage Instructions
 ```bash
 vrest-ng-cli run --projectdir="<path_to_tc_directory>"
-	[--testsuitename="<test_suite_name>"]
+	[--testsuitenames="<comma_separated_test_suite_names>"]
+	[--tags="<comma_separated_tag_names>"]
 	[--env=<environment_name>] 
 	[--nosslcheck=<boolean_value>]
 	[--logger=<one_of_available_loggers>]
@@ -96,19 +97,22 @@ vrest-ng-cli run --projectdir="<path_to_tc_directory>"
 ### Example
 ```bash
 vrest-ng-cli run --projectdir="/path/to/your/project/directory"
-	--testsuitename="Sample\ Test\ Suite"
+	--testsuitenames="Sample\ Test\ Suite"
 	--logger=xunit
 	--logfilepath="/path/to/directory/for/vrest-logs/logs.xml"
 ```
 
 ### Options:
 ```bash
---projectdir      : Provide the path of the project directory which contains the 
-                    testsuites.json file.
-                    If you dont provide the testsuitename option, then it will 
-                    execute all the test suites available in the project.
---testsuitename   : Optional: Provide the specific test suite name which you want 
-                    to execute in double quotes.
+--projectdir      : Provide the path of the project directory which contains
+                     the testsuites.json file. If you dont provide any filter, 
+					 then it will execute all the testcases available in the project.
+--testsuitenames  : Optional Filter: Provide the comma separated list of test
+                     suite names which you want to execute in double quotes.
+--tags            : Optional Filter: Provide the comma separated list of tags
+                     which you want to execute in double quotes.
+--methods         : Optional Filter: Provide the comma separated list of method
+                     names which you want to execute in double quotes.
 -T, --timeout     : How much to wait for response after execution of test case.
                     It should be provided in unit of seconds.
                     e.g. -T=3 will wait for 3 seconds for response
@@ -118,7 +122,7 @@ vrest-ng-cli run --projectdir="/path/to/your/project/directory"
                     requests, without Secure Certificate Check. By default 
                     Secure Certificate Check is enabled. This option is useful 
                     in self-signed certificate issues.
--L, --logger      : Your desired logging of the vRUNNER execution process 
+-L, --logger      : Your desired logging of the runner execution process 
                     and result. This can be either `console` or `json` or `csv` 
                     or `xunit`. By default `console` logger is used.
 -F, --logfilepath : Valid if other than `console` logger is selected.
@@ -127,7 +131,7 @@ vrest-ng-cli run --projectdir="/path/to/your/project/directory"
                     If path/file is not present, tool will try to setup that path, 
                     and create file automatically.
                     Please note that if file already exists, that will be overwritten.
-                    By default it will be the `vrest/logs.[json|xml|csv]` in 
+                    By default it will be the `vrest_logs/logs.[json|xml|csv]` in 
                     current directory.
--H, --help        : To see this help.
+--help            : To see this help.
 ```
