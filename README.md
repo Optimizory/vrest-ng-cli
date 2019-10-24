@@ -106,7 +106,7 @@ vrest-ng-cli run --projectdir="/path/to/your/project/directory"
 ```bash
 --projectdir      : Provide the path of the project directory which contains
                      the testsuites.json file. If you dont provide any filter, 
-					 then it will execute all the testcases available in the project.
+                     then it will execute all the testcases available in the project.
 --testsuitenames  : Optional Filter: Provide the comma separated list of test
                      suite names which you want to execute in double quotes.
 --tags            : Optional Filter: Provide the comma separated list of tags
