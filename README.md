@@ -4,24 +4,23 @@
 
 vrest-ng-cli is a command line utility aim to perform various tasks through command line. As of now, it provides two commands:
 1. **Run Command**
-	1.  Executes test cases on command line, which are created by [vREST NG](https://ng.vrest.io).
+	1. Executes test cases on command line, which are created by [vREST NG](https://ng.vrest.io).
 	2. Run command can be used in any third party schedular like cron to schedule test cases.
 	3. Run command can be used in any continuous integration server like Jenkins, TeamCity, Azure Devops, CircleCI, TravisCI etc.
 
 2. **Import Command**
-	1.  Import command is helpful in importing test data from various sources like vREST Cloud, Postman, Swagger.
+	1. Import command is helpful in importing test data from various sources like vREST Cloud, Postman, Swagger.
 	2. Import command can also be used in updating the swagger schema definitions in the project.
 
 ### Download:
 
 | Version | Linux | Mac OS | Windows |
 | ------------- | ------------ | ------------| ----------- |
+| 0.9.1 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.9.1/vrest_ng_cli_linux_0_9_1) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.9.1/vrest_ng_cli_mac_0_9_1) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.9.1/vrest_ng_cli_win_0_9_1.exe) |
 | 0.8.4 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.8.4/vrest_ng_cli_linux_0_8_4) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.8.4/vrest_ng_cli_mac_0_8_4) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.8.4/vrest_ng_cli_win_0_8_4.exe) |
 | 0.8.2 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.8.2/vrest_ng_cli_linux_0_8_2) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.8.2/vrest_ng_cli_mac_0_8_2) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.8.2/vrest_ng_cli_win_0_8_2.exe) |
 | 0.8.1 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.8.1/vrest_ng_cli_linux_0_8_1) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.8.1/vrest_ng_cli_mac_0_8_1) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.8.1/vrest_ng_cli_win_0_8_1.exe) |
 | 0.5.3 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.5.3/vrest_runner_linux_0_5_3) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.5.3/vrest_runner_mac_0_5_3) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.5.3/vrest_runner_win_0_5_3.exe) |
-| 0.0.116 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.0.116/vrest_runner_linux_0_0_116) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.0.116/vrest_runner_mac_0_0_116) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.0.116/vrest_runner_win_0_0_116.exe) |
-| 0.0.115 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.0.115/vrest_runner_linux_0_0_115) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.0.115/vrest_runner_mac_0_0_115) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v0.0.115/vrest_runner_win_0_0_115.exe) |
 
 ### Setup / Installation:
 
@@ -48,7 +47,7 @@ vrest-ng-cli is a command line utility aim to perform various tasks through comm
 
 ## Import Command
 
-This is the command used to import test cases into vREST Desktop.
+This is the command used to import test cases into vREST NG.
 
 ### Usage Instructions
 ```bash
