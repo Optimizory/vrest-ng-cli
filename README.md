@@ -89,8 +89,9 @@ vrest-ng-cli run --projectdir="<path_to_tc_directory>"
 	[--tags="<comma_separated_tag_names>"]
 	[--env=<environment_name>] 
 	[--nosslcheck=<boolean_value>]
+  [--consoleLogging=<boolean_value>]
 	[--logger=<one_of_available_loggers>]
-	[--logfilepath="<path_of_log_file_for_logger_other_than_console>"]
+	[--logfilepath="<path_of_log_file_for_logger>"]
 ```
 
 ### Example
@@ -121,8 +122,10 @@ vrest-ng-cli run --projectdir="/path/to/your/project/directory"
                     requests, without Secure Certificate Check. By default 
                     Secure Certificate Check is enabled. This option is useful 
                     in self-signed certificate issues.
+-C, --consoleLogging: If this argument is `false`, then the runner will not
+                    log the results on console.
 -L, --logger      : Your desired logging of the runner execution process 
-                    and result. This can be either `console` or `json` or `csv` 
+                    and result. This can be either `json` or `csv` 
                     or `xunit`. By default `console` logger is used.
 -F, --logfilepath : Valid if other than `console` logger is selected.
                     Absolute path of the log file, into which execution process 
