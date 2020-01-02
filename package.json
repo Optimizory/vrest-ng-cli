@@ -8,6 +8,7 @@
     "url": "git+https://github.com/optimizory/vrest-ng-cli"
   },
   "author": "Dheeraj Aggarwal <dheeraj.aggarwal@optimizory.com>",
+  "license": "Copyright Optimizory. All rights reserved.",
   "bugs": {
     "url": "https://github.com/optimizory/vrest-ng-cli/issues"
   },
@@ -18,6 +19,8 @@
     "start": "node src/index.js"
   },
   "dependencies": {
-    "bin-wrapper": "^4.1.0"
+    "arch": "^2.1.1",
+    "binary-wrapper": "0.0.1",
+    "detect-libc": "^1.0.3"
   }
 }

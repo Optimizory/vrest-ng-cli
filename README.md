@@ -10,6 +10,16 @@ vrest-ng-cli is a command line utility aim to perform various tasks through comm
 	1. Import command is helpful in importing test data from various sources like vREST Cloud, Postman, Swagger.
 	2. Import command can also be used in updating the swagger schema definitions in the project.
 
+## For NodeJS projects
+1. Simply install the module `vrest-ng-cli` as a dev dependency to your project by using the following commands:
+```
+$ cd /path/to/your/project
+$ npm install vrest-ng-cli --save-dev
+```
+Note: Please note that the `vrest-ng-cli` npm module is wrapper around vrest-ng-cli binary. The package version determines the version of the downloaded binary.
+
+## For projects which don't use NodeJS or npm
+Simply download the binary from the table below:
 ### Download:
 
 | Version | Linux | Mac OS | Windows |
