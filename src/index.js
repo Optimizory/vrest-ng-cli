@@ -33,6 +33,7 @@ const resolvePath = function(fpath){
       fpath = fpath.replace(/^~/, os.homedir());
     }
     fpath = path.normalize(fpath);
+    fpath = path.resolve(fpath);
   }
   return fpath;
 };
@@ -42,7 +43,7 @@ var defaultCache = function(){
   let cache = "./vendor";
   switch(process.platform){
     case 'darwin':
-      cache = '~/Library/Caches/vrest/hello';
+      cache = '~/Library/Caches/vrest';
       break;
     case 'win32':
       cache = '/AppData/Local/vrest/cache';
@@ -53,8 +54,6 @@ var defaultCache = function(){
   }
   return resolvePath(cache);
 }
-
-console.log((cacheFolder && resolvePath(cacheFolder)) || defaultCache());
 
 const bin = new BinWrapper()
   .src(`${base}/vrest_ng_cli_linux_${uver}`, "linuxx64")
