@@ -73,7 +73,8 @@ const bin = new BinWrapper()
 bin
   .run(["--version"])
   .then(
-    _ => spawn(bin.path(), process.argv.slice(2), { stdio: "inherit" }),
+    _ => spawn(bin.path(), process.argv.slice(2), { stdio: "inherit" })
+          .on('exit', process.exit),
     e => {
       console.error(`Failed! ${e}`)
       process.exit(1);
