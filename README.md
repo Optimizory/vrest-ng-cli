@@ -1,6 +1,6 @@
 # vrest-ng-cli
 
-vrest-ng-cli is a command line utility aim to perform various tasks through command line. As of now, it provides two commands:
+This repository is just a npm wrapper around `vrest-ng-cli` binary. `vrest-ng-cli` is a command line utility aim to perform various tasks through command line. As of now, it provides two commands:
 1. **Run Command**
 	1. Executes test cases on command line, which are created by [vREST NG](https://ng.vrest.io).
 	2. Run command can be used in any third party schedular like cron to schedule test cases.
@@ -101,7 +101,7 @@ vrest-ng-cli run --projectdir="<path_to_tc_directory>"
 	[--tags="<comma_separated_tag_names>"]
 	[--env=<environment_name>] 
 	[--nosslcheck=<boolean_value>]
-  [--consoleLogging=<boolean_value>]
+	[--consoleLogging=<boolean_value>]
 	[--logger=<one_of_available_loggers>]
 	[--logfilepath="<path_of_log_file_for_logger>"]
 ```
