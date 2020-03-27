@@ -24,6 +24,7 @@ Simply download the binary from the table below:
 
 | Version | Linux | Mac OS | Windows |
 | ------------- | ------------ | ------------| ----------- |
+| 1.2.3 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.2.3/vrest_ng_cli_linux_1_2_3) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.2.3/vrest_ng_cli_mac_1_2_3) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.2.3/vrest_ng_cli_win_1_2_3.exe) |
 | 1.2.0 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.2.0/vrest_ng_cli_linux_1_2_0) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.2.0/vrest_ng_cli_mac_1_2_0) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.2.0/vrest_ng_cli_win_1_2_0.exe) |
 | 1.0.4 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.0.4/vrest_ng_cli_linux_1_0_4) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.0.4/vrest_ng_cli_mac_1_0_4) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.0.4/vrest_ng_cli_win_1_0_4.exe) |
 | 1.0.3 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.0.3/vrest_ng_cli_linux_1_0_3) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.0.3/vrest_ng_cli_mac_1_0_3) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.0.3/vrest_ng_cli_win_1_0_3.exe) |
@@ -105,6 +106,8 @@ vrest-ng-cli run --projectdir="<path_to_tc_directory>"
 	[--consoleLogging=<boolean_value>]
 	[--logger=<one_of_available_loggers>]
 	[--logfilepath="<path_of_log_file_for_logger>"]
+  [--record=<boolean_value>]
+  [--token=<cli_token>]
 ```
 
 ### Example
@@ -114,6 +117,16 @@ vrest-ng-cli run --projectdir="/path/to/your/project/directory"
 	--logger=xunit
 	--logfilepath="/path/to/directory/for/vrest-logs/logs.xml"
 ```
+And if you would like to record the test execution results in the vREST NG Dashboard Service then
+```bash
+vrest-ng-cli run --projectdir="/path/to/your/project/directory"
+  --testsuitenames="Sample\ Test\ Suite"
+  --logger=xunit 
+  --logfilepath=/path/to/directory/for/vrest-logs/logs.xml
+  --record=true
+  --token="paste the generated CLI Token here"
+```
+Note: For information on generating CLI Token, you may look at our guide on [CLI Token](https://ng.vrest.io/docs/dashboard/cli-token.html)
 
 ### Options:
 ```bash
@@ -131,6 +144,11 @@ vrest-ng-cli run --projectdir="/path/to/your/project/directory"
                     e.g. -T=3 will wait for 3 seconds for response
 -N, --env         : Provide the environment name to initialize the global 
                     variables. By default environment `Default` is used.
+--token           : Provide the authentication token to store the test 
+                    run results on vREST NG Dashboard Service.
+--record          : If this argument is `true`, then the runner will
+                    record and store the test run results in vREST NG
+                    Dashboard Service.     [boolean] [default: false]
 -S, --nosslcheck  : If this argument is `true`, vRUNNER will process all 
                     requests, without Secure Certificate Check. By default 
                     Secure Certificate Check is enabled. This option is useful 
