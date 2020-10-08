@@ -24,6 +24,7 @@ Simply download the binary from the table below:
 
 | Version | Linux | Mac OS | Windows |
 | ------------- | ------------ | ------------| ----------- |
+| 1.8.0 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.8.0/vrest_ng_cli_linux_1_8_0) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.8.0/vrest_ng_cli_mac_1_8_0) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.8.0/vrest_ng_cli_win_1_8_0.exe) |
 | 1.7.0 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.7.0/vrest_ng_cli_linux_1_7_0) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.7.0/vrest_ng_cli_mac_1_7_0) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.7.0/vrest_ng_cli_win_1_7_0.exe) |
 | 1.6.0 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.6.0/vrest_ng_cli_linux_1_6_0) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.6.0/vrest_ng_cli_mac_1_6_0) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.6.0/vrest_ng_cli_win_1_6_0.exe) |
 | 1.5.0 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.5.0/vrest_ng_cli_linux_1_5_0) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.5.0/vrest_ng_cli_mac_1_5_0) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.5.0/vrest_ng_cli_win_1_5_0.exe) |
@@ -161,7 +162,7 @@ Note: For information on generating CLI Token, you may look at our guide on [CLI
                     log the results on console.
 -L, --logger      : Your desired logging of the runner execution process 
                     and result. This can be either `json` or `csv` 
-                    or `xunit`. By default `console` logger is used.
+                    or `xunit` or `custom`. By default `console` logger is used.
 -F, --logfilepath : Valid if other than `console` logger is selected.
                     Absolute path of the log file, into which execution process 
                     and result logs will be dumped.
@@ -170,5 +171,11 @@ Note: For information on generating CLI Token, you may look at our guide on [CLI
                     Please note that if file already exists, that will be overwritten.
                     By default it will be the `vrest_logs/logs.[json|xml|csv]` in 
                     current directory.
+--logscriptpath   : Valid if logger value is `custom`. Provide file path of
+                    the logger script to generate custom formatted output.
+--stoponerror     : Specify 0 if you don't want to stop on error. Specify 1
+                    if you want to stop on first error. Otherwise specify
+                    any number if you want to stop the execution after the
+                    specified number of failed executions.     [default: 0]
 --help            : To see this help.
 ```
