@@ -24,6 +24,7 @@ Simply download the binary from the table below:
 
 | Version | Linux | Mac OS | Windows |
 | ------------- | ------------ | ------------| ----------- |
+| 2.0.0 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v2.0.0/vrest_ng_cli_linux_2_0_0) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v2.0.0/vrest_ng_cli_mac_2_0_0) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v2.0.0/vrest_ng_cli_win_2_0_0.exe) |
 | 1.9.2 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.9.2/vrest_ng_cli_linux_1_9_2) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.9.2/vrest_ng_cli_mac_1_9_2) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.9.2/vrest_ng_cli_win_1_9_2.exe) |
 | 1.8.0 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.8.0/vrest_ng_cli_linux_1_8_0) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.8.0/vrest_ng_cli_mac_1_8_0) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.8.0/vrest_ng_cli_win_1_8_0.exe) |
 | 1.7.0 | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.7.0/vrest_ng_cli_linux_1_7_0) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.7.0/vrest_ng_cli_mac_1_7_0) | [Download](https://github.com/Optimizory/vrest-ng-cli/releases/download/v1.7.0/vrest_ng_cli_win_1_7_0.exe) |
