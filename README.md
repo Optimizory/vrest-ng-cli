@@ -202,3 +202,7 @@ Note: For information on generating CLI Token, you may look at our guide on [CLI
                     Otherwise it will not use the proxy settings. [boolean] [default: true]
 --help            : To see this help.
 ```
+
+**Note:**
+1. For more information on how you may write a custom logger to generate customized output, you may follow our guide on [custom logger](https://vrest.io/docs/cli/custom-logger.html).
+2. For more information on providing run time variables through option `--vars` or `--envfilepath`, you may follow our guide on [run time variables](https://vrest.io/docs/cli/run-time-variables.html).
