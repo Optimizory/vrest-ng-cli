@@ -110,7 +110,7 @@ This is the command used for running the test cases that you stored in the proje
 ### Usage Instructions
 ```bash
 vrest-ng-cli run --projectdir="<path_to_tc_directory>"
-	[--testsuitenames="<comma_separated_test_suite_names>"]
+	[--testsuites="<comma_separated_test_suite_names>"]
 	[--tags="<comma_separated_tag_names>"]
 	[--env=<environment_name>] 
 	[--nosslcheck=<boolean_value>]
@@ -124,37 +124,50 @@ vrest-ng-cli run --projectdir="<path_to_tc_directory>"
 ### Example
 ```bash
 vrest-ng-cli run --projectdir="/path/to/your/project/directory"
-	--testsuitenames="Sample\ Test\ Suite"
+	--testsuites="Sample\ Test\ Suite"
 	--logger=xunit
 	--logfilepath="/path/to/directory/for/vrest-logs/logs.xml"
 ```
 And if you would like to record the test execution results in the vREST NG Dashboard Service then
 ```bash
 vrest-ng-cli run --projectdir="/path/to/your/project/directory"
-  --testsuitenames="Sample\ Test\ Suite"
+  --testsuites="Sample\ Test\ Suite"
   --logger=xunit 
   --logfilepath=/path/to/directory/for/vrest-logs/logs.xml
   --record=true
   --token="paste the generated CLI Token here"
 ```
-Note: For information on generating CLI Token, you may look at our guide on [CLI Token](https://ng.vrest.io/docs/dashboard/cli-token.html)
+Note: For information on generating CLI Token, you may look at our guide on [CLI Token](https://vrest.io/docs/dashboard/cli-token.html)
 
 ### Options:
 ```bash
 --projectdir      : Provide the path of the project directory which contains
-                     the testsuites.json file. If you dont provide any filter, 
-                     then it will execute all the testcases available in the project.
---testsuitenames  : Optional Filter: Provide the comma separated list of test
-                     suite names which you want to execute in double quotes.
+                    the testsuites.json file. If you dont provide any filter, 
+                    then it will execute all the testcases available in the project.
+--testsuites      : Optional Filter: Provide the comma separated list of test
+                    suite names which you want to execute in double quotes.
 --tags            : Optional Filter: Provide the comma separated list of tags
-                     which you want to execute in double quotes.
+                    which you want to execute in double quotes.
 --methods         : Optional Filter: Provide the comma separated list of method
-                     names which you want to execute in double quotes.
+                    names which you want to execute in double quotes.
+--exclude-testsuites: Optional exclude filter: Provide the comma separated
+                      list of test suite ids which you don't want to execute
+                      in double quotes.
+--exclude-tags    : Optional exclude filter: Provide the comma separated
+                    list of tags which you don't want to execute in double
+                    quotes.
+--exclude-methods : Optional exclude filter: Provide the comma separated
+                    list of method names which you don't want to execute in
+                    double quotes.
 -T, --timeout     : How much to wait for response after execution of test case.
                     It should be provided in unit of seconds.
                     e.g. -T=3 will wait for 3 seconds for response
 -N, --env         : Provide the environment name to initialize the global 
                     variables. By default environment `Default` is used.
+--vars, -v        : Provide extra run time variables through this option
+                    apart from `--env` option.                 [default: {}]
+--envfilepath     : Provide the environment file path containing extra run
+                    time variables (key/value pairs) in JSON format.
 --token           : Provide the authentication token to store the test 
                     run results on vREST NG Dashboard Service.
 --record          : If this argument is `true`, then the runner will
